@@ -1,0 +1,19 @@
+{
+  "name": "bentoadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/107bento/BentoAdmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/107bento/BentoAdmin/issues"
+  },
+  "homepage": "https://github.com/107bento/BentoAdmin#readme"
+}
