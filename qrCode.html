@@ -36,6 +36,29 @@
           });
         </script> 
     
+        <div>
+          <h2>BENTO 訂單資訊</h2>
+          <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Order ID : </label>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="orderID">
+              </div>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Detail ID</th>
+                <th scope="col">店家名稱</th>
+                <th scope="col">餐點名稱</th>
+                <th scope="col">數量</th>
+              </tr>
+            </thead>
+            <tbody id="detailsBody">
+
+            </tbody>
+          </table>
+          <button id="receiveBtn" class="btn btn-success col" hidden onclick="event.preventDefault(); app.receiveOrder()";>領餐</button>
+        </div>
     </div>
     
 
