@@ -21,8 +21,8 @@
         <script type="text/javascript">
           var scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
           scanner.addListener('scan', function (content, image) {
-            console.log(content);
-            app.recieveOrder(content);
+            // console.log(content);
+            app.getOrder(content);
           });
      
           Instascan.Camera.getCameras().then(function (cameras) {
