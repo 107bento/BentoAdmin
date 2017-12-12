@@ -17,20 +17,20 @@ const API = (function () {
       return _requestHandle(request);
     }
   
-    // 審核單位登入
-    function checkOrder(hex) {
-        const data = {"hex": hex};
-        const request = fetch(`${baseUrl}/user/admin`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          credentials: 'include',
-          body: JSON.stringify(data)
-        });
-    
-        return _requestHandle(request);
-      }
+    // 工讀生拿訂單
+    function getOrder(hex) {
+      const data = {"hex": hex};
+      const request = fetch(`${baseUrl}/orders/admin`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include',
+        body: JSON.stringify(data)
+      });
+  
+      return _requestHandle(request);
+    }
 
     // http request 的中介處理
     function _requestHandle(request) {
@@ -60,7 +60,7 @@ const API = (function () {
   
     return {
       login,
-      checkOrder
+      getOrder
     }
   })();
   
